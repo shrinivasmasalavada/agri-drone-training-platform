@@ -26,6 +26,8 @@ Suited to agriculture spraying, training fleets, logistics, firefighting support
 | AI + Computer Vision   | 2 months |      
 | Drone/UAV Technology   | 2 months |     
 | Embedded AI + Robotics | 3 months | 
+
+
 ![Uploading image.png…]()
 
 
