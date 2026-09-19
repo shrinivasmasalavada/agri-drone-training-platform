@@ -26,8 +26,8 @@ Suited to agriculture spraying, training fleets, logistics, firefighting support
 | AI + Computer Vision   | 2 months |      
 | Drone/UAV Technology   | 2 months |     
 | Embedded AI + Robotics | 3 months | 
+![Uploading image.png…]()
 
-100x SUPERCHARGED MASTER SPECIFICATION: DEEP-TECH UAV & EMBEDDED AI STARTUP PLATFORM
 
 Version: 5.0 (Enterprise Production Grade) 
 Architecture: Next.js 14+ (App Router) / React 18+ / TypeScript strict / Tailwind CSS / Three.js / R3F / Drei / Framer Motion / GSAP / Zod / Prisma / PostgreSQL 
