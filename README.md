@@ -161,7 +161,7 @@ Typography Scale
   • Communication Link: Encrypted long-range OFDM video and telemetry transceiver.
   • Edge Computer: NVIDIA Jetson Orin Nano (40 TOPS AI compute) for real-time onboard computer vision.
   • Sensor Suite: Barometer, Magnetometer, Optical Flow, and Time-of-Flight distance sensors.
-
+ 
 3.2 DRONE TECHNOLOGY PAGE (app/drone-technology/page.tsx)
 • UAV Architecture Pipeline Diagram: Visual step-by-step interactive SVG/CSS flowchart:
   SENSORS (IMU/GPS/LiDAR) ➔ FLIGHT CONTROLLER (Stabilization & Mixer) ➔ EDGE COMPUTE (Jetson AI Board) ➔ COMPUTER VISION / INFERENCE ➔ DECISION ENGINE ➔ ACTUATION (Motors & Servos)
