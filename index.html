@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VM Drone Spraying in Karnataka</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ 1. NAVIGATION ============ -->
+<header id="nav">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#home" class="brand flex items-center gap-2 font-bold text-lg">
+      <!-- LOGO: replace this SVG with <img src="logo.png" class="h-9"> -->
+         <img src="assets/images/logo.png" alt="Eagle Eye Agri Services logo" class="h-9 w-9 rounded-full object-cover">
+      <span>VM Drone <span class="text-[color:var(--green-deep)]">Spray 76</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#drones">Drones</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#impact">Impact</a>
+      <a class="nav-link" href="#book">Book Now</a>
+      <a class="nav-link" href="#contact">About &amp; Contact</a>
+    </nav>
+    <button id="menuBtn" class="lg:hidden p-2" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h18M4 13h18M4 19h18"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-[color:var(--line)] bg-white/90 px-5 py-3 flex-col">
+    <a class="block py-3 font-medium" href="#home">Home</a>
+    <a class="block py-3 font-medium" href="#drones">Drones</a>
+    <a class="block py-3 font-medium" href="#services">Services</a>
+    <a class="block py-3 font-medium" href="#impact">Impact</a>
+    <a class="block py-3 font-medium" href="#book">Book Now</a>
+    <a class="block py-3 font-medium" href="#contact">About &amp; Contact</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ 2. HERO ============ -->
+<section id="home">
+  <!-- HERO VIDEO: put a direct .mp4 link in CONFIG.heroVideo below (JavaScript section) -->
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto"></video>
+  <div class="hero-wash"></div>
+  <div class="relative max-w-6xl mx-auto px-5 pt-28 pb-20 w-full">
+    <p class="hero-in badge" style="animation-delay:.1s">DGCA certified drone spraying</p>
+    <h1 class="hero-in mt-6 text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] max-w-3xl" style="animation-delay:.25s">VM Drones<br>Agri Services</h1>
+    <p class="hero-in mt-6 text-lg sm:text-xl text-[color:var(--muted)] max-w-xl" style="animation-delay:.4s">Faster, even spraying for your crops. Book a drone for your field anywhere in Karnataka.</p>
+    <div class="hero-in mt-9 flex flex-wrap gap-3" style="animation-delay:.55s">
+      <a href="#book" class="btn">Book a drone</a>
+      <a href="#services" class="btn btn-ghost">See our work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. FOUNDER ============ -->
+<section id="founder" class="sec">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="rv from-left zoom aspect-[4/5]" id="founderImg"></div>
+    <div class="rv from-right">
+      <h2 class="text-4xl sm:text-5xl font-bold" id="founderRole">Owner &amp; Pilot</h2>
+      <p class="mt-2 text-2xl font-semibold text-[color:var(--green-deep)]" id="founderName"></p>
+      <div class="mt-6"><span class="badge text-base">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3Z"/><path d="m8.5 12 2.5 2.5L16 9.5"/></svg>
+        DGCA Certified Pilot</span></div>
+      <p class="mt-6 text-[color:var(--muted)] leading-relaxed max-w-md" id="founderBio"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. DRONES ============ -->
+<section id="drones" style="background:var(--bg2)">
+  <div class="sec">
+    <h2 class="rv from-left text-4xl sm:text-5xl font-bold">Our DGCA Certified Drones</h2>
+    <p class="rv from-left mt-3 text-[color:var(--muted)] max-w-xl">Two agricultural spraying drones, registered and flown by a certified pilot.</p>
+    <div class="grid md:grid-cols-2 gap-8 mt-12" id="droneGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 5. SERVICES & GALLERY ============ -->
+<section id="services" class="sec">
+  <h2 class="rv from-left text-4xl sm:text-5xl font-bold">Crops we spray</h2>
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-12" id="galleryGrid"></div>
+</section>
+
+<!-- ============ 6. IMPACT ============ -->
+<section id="impact" style="background:var(--bg2)">
+  <div class="sec">
+    <h2 class="rv from-left text-4xl sm:text-5xl font-bold">Our impact</h2>
+    <div class="grid md:grid-cols-2 gap-8 mt-12" id="statGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 7. BOOKING ============ -->
+<section id="book" class="sec">
+  <div class="grid md:grid-cols-5 gap-12 items-start">
+    <div class="md:col-span-2 rv from-left">
+      <h2 class="text-4xl sm:text-5xl font-bold">Book drone spraying</h2>
+      <p class="mt-4 text-[color:var(--muted)] leading-relaxed">Fill in your details. Pressing the button opens WhatsApp with your message ready to send to us.</p>
+    </div>
+    <form id="bookForm" class="md:col-span-3 card p-6 sm:p-8 rv from-right grid gap-5" novalidate>
+      <div><label for="fName">Farmer name</label><input id="fName" required autocomplete="name"></div>
+      <div><label for="fPhone">Phone number</label><input id="fPhone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" required autocomplete="tel-national"></div>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div><label for="fVillage">Village</label><input id="fVillage" required></div>
+        <div><label for="fTaluk">Taluk</label><input id="fTaluk" required></div>
+        <div><label for="fDistrict">District</label><input id="fDistrict" required></div>
+      </div>
+      <p id="formErr" class="text-sm text-red-700 hidden" role="alert"></p>
+      <button class="btn justify-center" type="submit">Send booking on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 8. ABOUT & CONTACT ============ -->
+<section id="contact" style="background:var(--bg2)">
+  <div class="sec">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="rv from-left">
+        <div class="brand flex items-center gap-2 font-bold text-2xl">
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#e6f4e4" stroke="#6fbf73"/><path d="M6 21c5-8 11-11 14-11s9 3 14 11c-5 7-11 10-14 10S11 28 6 21Z" fill="none" stroke="#2f7d3a" stroke-width="2"/><circle cx="20" cy="21" r="5" fill="#2f7d3a"/></svg>
+          VM Drone Spray 76
+        </div>
+        <!-- MISSION: edit these two lines -->
+        <p class="mt-5 text-[color:var(--muted)] leading-relaxed max-w-md">We bring precise drone spraying to Karnataka's farms, cutting time, water and chemical waste.<br>Our goal is healthier crops and lower costs for every farmer we serve.</p>
+      </div>
+      <div class="rv from-right grid gap-4 content-start" id="contactBox"></div>
+    </div>
+
+    <!-- Equipment partner -->
+    <div class="card mt-14 p-6 sm:p-8 rv from-up grid sm:grid-cols-[auto_1fr_auto] gap-6 items-center" id="partnerBox"></div>
+    <p class="mt-12 text-sm text-[color:var(--muted)]">© <span id="yr"></span> VM drone Spraying. All rights reserved.</p>
+  </div>
+</section>
+</main>
+
+<!-- Video popup -->
+<div id="vModal" role="dialog" aria-modal="true" aria-label="Video player">
+  <button id="vClose" aria-label="Close video">&times;</button>
+  <video id="vPlayer" controls playsinline></video>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
